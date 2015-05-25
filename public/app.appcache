@@ -1,0 +1,27 @@
+CACHE MANIFEST
+###### 05/34/15######
+index.html
+
+/fonts/FontAwesome.otf
+/fonts/fontawesome-webfont.eot
+/fonts/fontawesome-webfont.svg
+/fonts/fontawesome-webfont.ttf
+/fonts/fontawesome-webfont.woff
+/style/font-awesome.min.css
+/style/style.css
+/build/bundledup.js
+
+
+NETWORK:
+*
+
+
+FALLBACK:
+/fonts/fontawesome-webfont.woff /fonts/fontawesome-webfont.woff
+/fonts/fontawesome-webfont.eot /fonts/fontawesome-webfont.eot
+/fonts/fontawesome-webfon/fonts/fontawesome-webfont.svg
+/fonts/fontawesome-webfon/fonts/fontawesome-webfont.ttf
+/fonts/FontAwesome.otf /fonts/FontAwesome.otf
+
+
+##################

@@ -1,0 +1,12 @@
+<a href="#food/<%= _id %>">
+  <% if(isExpired) {%>
+  <p class="expires_on expired">
+    X
+  </p>
+  <% } else {%>
+  <p class="expires_on x_<%= expiresIn %>">
+    <%= expiresIn %>
+  </p>
+  <%} %>
+  <img src="<%= img %>" />
+</a>

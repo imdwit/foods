@@ -1,0 +1,21 @@
+<div class="food_container">
+  <div class="img_container">
+    <a href="#" id="edit_image" class="edit hidden" ><span><i class="fa fa-camera "></i> Edit Image</span></a>
+    <img id="img_holder" class="" src="<%= img %>">
+    <% if(isExpired) {%>
+    EXPIRED
+    <% } else {%>
+    <%= (expiresIn > 1) ? expiresIn + ' days' : expiresIn + ' day' %>
+    <%} %>
+  </div>
+  <div class="info_container">
+    <p class="text "><span class="editable"><%= text %></span><input class="edit hidden" type="text" id="text" placeholder="<%= text %>"></p>
+    <p class="text "><span class="editable"><%= name %></span><input class="edit hidden" type="text" id="name" placeholder="<%= name %>"></p>
+    <p class="text ">Type: <span class="editable"><%= type %></span><input class="edit hidden" type="text" id="type" placeholder="<%= type %>"></p>
+    <p class="text ">Quantiy: <span class="editable"><%= quantity %></span><input class="edit hidden" type="number" pattern="[0-9]*" id="quantity" placeholder="<%= quantity %>"></p>
+    <p class="text ">Added on <%= addedOnFormated %></p>
+    <p class="text" >Expires on <span class="editable"><%= expiresOnFormated %></span><input class="edit hidden" type="date" id="expiresOn" value="<%= expiresOnFormated %>"></p>
+    <p class="text" class="editable"><a href="#" class="edit hidden remove">Delete</a></p>
+  </div>
+  <input type="file" accept="image/*"  capture="camera" id="image_upload" class="hidden" >
+</div>

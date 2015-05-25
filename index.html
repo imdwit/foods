@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="/style/font-awesome.min.css" rel="stylesheet" />
+    <link href="/style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <ul id="main" class="">
+    </ul>
+    <div id="menu">
+    </div>
+
+    <script id="menu_index_Tmpl" type="text/template">
+    <div class="nav">
+      <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+    </div>
+    <div class="nav">
+      <a href="#addFood"><i class="fa fa-plus fa-2x"></i></a>
+    </div>
+    </script>
+
+    <script id="menu_foodDetail_Tmpl" type="text/template">
+    <div class="nav">
+      <a href="#"><i class="fa fa-home fa-2x"></i></a>
+    </div>
+    <div class="nav editable">
+      <a href="#" id="toggle_edit" class=""><i class="fa fa-edit fa-2x"></i></a>
+    </div>
+    <div class="nav edit hidden">
+      <a href="#" id="save_food"><i class="fa fa-save fa-2x"></i></a>
+    </div>
+    </script>
+
+    <script id="menu_addFood_Tmpl" type="text/template">
+    <div class="nav">
+      <a href="#"><i class="fa fa-home fa-2x"></i></a>
+    </div>
+    <div class="nav">
+      <a href="#" id="save_food"><i class="fa fa-save fa-2x"></i></a>
+    </div>
+    </script>
+    <script src="/build/bundledup.js"></script>
+  </body>
+</html>

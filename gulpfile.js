@@ -8,10 +8,10 @@ var gulp = require('gulp'),
 
 gulp.task('default', function() {
   livereload.listen();
-  watch(['./app/**/*', '!./app/tests/**/*', './public/style', './public/index.html'], function() {
+  watch(['./app/src/**/*', './style', 'index.html'], function() {
     gulp.run('bf');
   });
-  watch(['./app/tests/js/*'], function() {
+  watch(['./app/tests/js/testsource.js'], function() {
     gulp.run('tests');
   });
 });
@@ -24,10 +24,10 @@ gulp.task('tests', function() {
 });
 
 gulp.task('bf', function() {
-  return browserify('./app/main.js')
+  return browserify('./app/src/main.js')
     .bundle()
     .pipe(source('bundledup.js'))
-    .pipe(gulp.dest('./public/build/'))
+    .pipe(gulp.dest('./build/'))
     .pipe(gulp.dest('./app/tests/js/'))
     .pipe(livereload());
 });
